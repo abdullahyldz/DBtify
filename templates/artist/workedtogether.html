@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worked Together</title>
+</head>
+<body>
+<form action = "{{ url_for('workTogetherArtists') }}" method="POST">
+        <div class="container">
+            <input type="text" placeholder="Name~Surname" name="artist" required>
+            <button type="submit">Get Artists Who Worked together!</button>
+        </div>
+        <br>
+</form>
+</body>
+</html>

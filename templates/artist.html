@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <title>Artist</title>
     <link rel="stylesheet" href='./../static/styles.css'/>
+    <h1>Artist Page</h1>
+    <p>{{ text }} </p>
 </head>
 <body>
 <div class = "home">
     <a href="/" class="button">Home</a>
 </div>
-<div class = "album-or-song">
-    <SELECT>
-        <OPTION Value="album">Album</OPTION>
-        <OPTION Value="song">Song</OPTION>
-    </SELECT>
+<div class="operations">
+    <a href="/song/add">Add Song</a>
+    <a href="/song/delete">Delete Song</a>
+    <a href="/song/update">Update Song</a>
+    <a href="/album/add">Add Album</a>
+    <a href="/album/update">Update Album</a>
+    <a href="/album/delete">Delete Album</a>
 </div>
-<div class = "operation">
-    <SELECT>
-        <OPTION Value="add">Add</OPTION>
-        <OPTION Value="update">Update</OPTION>
-        <OPTION Value="delete">Delete</OPTION>
-    </SELECT>
-</div>
-
 </body>
 
 </html>

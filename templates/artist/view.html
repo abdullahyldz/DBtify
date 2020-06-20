@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+    <meta charset="UTF-8">
+    <title>View All Artists</title>
+</head>
+<body>
+<h1>View All Artists</h1>
+<table id="songs">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for artist in data %}
+            <tr>
+                <td>{{artist[0]}}</td>
+                <td>{{artist[1]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

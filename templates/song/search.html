@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search for Songs</title>
+</head>
+<body>
+<h1>Search for Songs</h1>
+<form action = "{{ url_for('searchSongs') }}" method="POST">
+        <div class="container">
+            <input type="text" placeholder="Keyword" name="keyword" required>
+            <button type="submit">Search!</button>
+        </div>
+        <br>
+</form>
+</body>
+</html>

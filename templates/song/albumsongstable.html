@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+</head>
+<body>
+<table id="songs">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Album Id</th>
+        <th>Producers</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for album in data %}
+            <tr>
+                <td>{{album[0]}}</td>
+                <td>{{album[1]}}</td>
+                <td>{{album[2]}}</td>
+                <td>{{album[3]}}</td>
+        {% endfor %}
+    </tbody>
+</body>
+</html>

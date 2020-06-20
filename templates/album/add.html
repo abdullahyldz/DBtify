@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Albums</title>
+</head>
+<body>
+<h1> Add Album</h1>
+    <form action = "{{ url_for('addAlbum') }}" method="POST">
+        <div class="container">
+            <input type="text" placeholder="Album Id" name="id"   value="1" required>
+            <input type="text" placeholder="Genre" name="genre"   value="rock" required>
+            <input type="text" placeholder="Title" name="title"   value="title" required>
+            <button type="submit">Create!</button>
+        </div>
+        <br>
+
+        <div id="songs">
+            <input type="text" placeholder="Song Id" name="songid1" id="songid1" value="1"  required>
+            <input type="text" placeholder="Song Title" name="songtitle1" id="songtitle1" value="songtitle1" required>
+            <input type="text" placeholder="Producers" name="producers1" id="producers1"  value="producers1">
+            <br>
+        </div>
+        <button onclick="myFunction()" type="button">Add Song</button>
+    </form>
+<script type="text/javascript">
+
+function myFunction() {
+    var songs = document.getElementById("songs");
+    var number = songs.childElementCount;
+    var newid = (number)/4+1;
+    console.log(newid);
+    console.log("songid"+newid);
+
+    var x = document.createElement("INPUT");
+    var y = document.createElement("INPUT");
+    var z = document.createElement("INPUT");
+    x.type = "text";
+    x.name = "songid"+newid;
+    x.value = newid;
+    x.placeholder = "Song Id";
+    y.type = "text";
+    y.name = "songtitle"+newid;
+    y.value = "songtitle"+newid;
+    y.placeholder = "Song Title";
+    z.type = "text";
+    z.name = "producers"+newid;
+    z.value = "producers"+newid;
+    z.placeholder = "Producers";
+    songs.appendChild(document.createElement("br"));
+    songs.appendChild(x);
+    songs.appendChild(y);
+    songs.appendChild(z);
+}
+</script>
+</body>
+</html>

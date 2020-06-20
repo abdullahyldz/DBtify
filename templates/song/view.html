@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+    <meta charset="UTF-8">
+    <title>View All Songs</title>
+</head>
+<body>
+<h1>View All Songs</h1>
+<table id="songs">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Album Id</th>
+        <th>Producers</th>
+        <th>Genre</th>
+        <th>Album Title</th>
+        <th>Artist</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for song in data %}
+            <tr>
+                <td>{{song[0]}}</td>
+                <td>{{song[1]}}</td>
+                <td>{{song[2]}}</td>
+                <td>{{song[3]}}</td>
+                <td>{{song[4]}}</td>
+                <td>{{song[5]}}</td>
+                <td>{{song[6]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Delete Song</h2>
+<form action = "{{ url_for('deleteSong') }}" method="POST">
+        <div class="container">
+            <input type="text" placeholder="Song Id" name="id" required>
+            <button type="submit">Delete Song</button>
+        </div>
+        <br>
+</form>
+</body>
+</html>

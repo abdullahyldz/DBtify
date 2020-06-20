@@ -1,0 +1,98 @@
+INSERT INTO artists (name,surname) VALUES ('Ceylan','Ertem')
+INSERT INTO artists (name,surname) VALUES ('Fikret','Kizilok')
+INSERT INTO artists (name,surname) VALUES ('Kansas','-')
+INSERT INTO artists (name,surname) VALUES ('Manga','-')
+INSERT INTO artists (name,surname) VALUES ('MFO','-')
+INSERT INTO artists (name,surname) VALUES ('Neset','Ertas')
+INSERT INTO artists (name,surname) VALUES ('Pinhani','-')
+INSERT INTO artists (name,surname) VALUES ('Queen','-')
+INSERT INTO artists (name,surname) VALUES ('R.E.M','-')
+INSERT INTO artists (name,surname) VALUES ('Sezen','Aksu')
+INSERT INTO artists (name,surname) VALUES ('Tuna','Kiremitci')
+INSERT INTO artists (name,surname) VALUES ('Coskun','Karademir')
+INSERT INTO artists (name,surname) VALUES ('Mert Fehmi','Alatan')
+INSERT INTO artists (name,surname) VALUES ('Berkant','Celen')
+INSERT INTO artists (name,surname) VALUES ('Alp','Ersonmez')
+INSERT INTO artists (name,surname) VALUES ('Can','Gungor')
+INSERT INTO artists (name,surname) VALUES ('Cihan','Murtazaoglu')
+INSERT INTO artists (name,surname) VALUES ('Elis','Dubaz')
+INSERT INTO artists (name,surname) VALUES ('Esin','Iris')
+INSERT INTO listeners (username,email) VALUES ('selenparlar','parlarselen@gmail.com')
+INSERT INTO listeners (username,email) VALUES ('taflangundem','gundem@boun.edu.tr')
+INSERT INTO listeners (username,email) VALUES ('can','can@gmail.com')
+INSERT INTO listeners (username,email) VALUES ('pelin','pelin@gmail.com')
+INSERT INTO listeners (username,email) VALUES ('daniel_ek','daniel@spotify.com')
+insert into albums values (14, 'Pop', 'Soluk', 'Ceylan~Ertem');
+insert into albums values (15, 'Pop', 'Cahille Kestim Sohbeti', 'Ceylan~Ertem');
+insert into albums values (16, 'Pop', 'Yadigar', 'Fikret~Kizilok');
+insert into albums values (9, 'Rock', 'Point of Know Return', 'Kansas~-');
+insert into albums values (18, 'Alternative', 'Sehri Huzun', 'Manga~-');
+insert into albums values (19, 'Rock', 'Geldiler', 'MFO~-');
+insert into albums values (17, 'Abdallik', 'Gonul Dagi', 'Neset~Ertas');
+insert into albums values (10, 'Rock', 'The Game', 'Queen~-');
+insert into albums values (2, 'Rock', 'Yollar Bizi Bekler', 'Pinhani~-');
+insert into albums values (11, 'Rock', 'News Of The World', 'Queen~-');
+insert into albums values (13, 'Rock', 'Out Of Time', 'R.E.M~-');
+insert into albums values (1, 'Pop', 'Allahaismarladik', 'Sezen~Aksu');
+insert into albums values (7, 'Pop', 'DEMO', 'Sezen~Aksu');
+insert into albums values (4, 'Pop', 'Tuna Kiremitci ve Arkadaslari, Vol. 2', 'Tuna~Kiremitci');
+insert into songs values (140, 'Gonul Dagi', 14, 'Coskun~Karademir,Mert Fehmi~Alatan,Berkant~Celen,Alp~Ersonmez,Can~Gungor');
+insert into songs values (141, 'Nazima', 14, 'Cihan~Murtazaoglu,Alp~Ersonmez,Can~Gungor');
+insert into songs values (150, 'Farketmeden', 15, 'Can~Gungor');
+insert into songs values (160, 'Farketmeden', 16, '');
+insert into songs values (90, 'Dust In The Wind', 9, '');
+insert into songs values (180, 'Dunyanin Sonuna Dogmusum', 18, '');
+insert into songs values (190, 'Ali Desidero', 19, '');
+insert into songs values (170, 'Gonul Dagi', 17, '');
+insert into songs values (20, 'Gor Beni', 2, '');
+insert into songs values (100, 'Another One Bites The Dust', 10, '');
+insert into songs values (110, 'We Will Rock You', 11, '');
+insert into songs values (130, 'Losing My Religion', 13, '');
+insert into songs values (10, 'Kusura Bakma', 1, '');
+insert into songs values (70, 'Begonvil', 7, '');
+insert into songs values (40, 'Balkan Kizi', 4, 'Elis Dubaz');
+insert into songs values (41, 'Seninle Her Sey Olur', 4, 'Esin Iris');
+insert into likesong values ('selenparlar', 40);
+insert into likesong values ('selenparlar', 10);
+insert into likesong values ('selenparlar', 130);
+insert into likesong values ('selenparlar', 120);
+insert into likesong values ('selenparlar', 41);
+insert into likesong values ('selenparlar', 90);
+insert into likesong values ('taflangundem', 90);
+insert into likesong values ('taflangundem', 110);
+insert into likesong values ('taflangundem', 100);
+insert into likesong values ('taflangundem', 130);
+insert into likesong values ('taflangundem', 10);
+insert into likesong values ('can', 130);
+insert into likesong values ('can', 140);
+insert into likesong values ('can', 141);
+insert into likesong values ('can', 150);
+insert into likesong values ('can', 160);
+insert into likesong values ('can', 170);
+insert into likesong values ('can', 90);
+insert into likesong values ('pelin', 180);
+insert into likesong values ('pelin', 20);
+insert into likesong values ('pelin', 10);
+insert into likesong values ('pelin', 70);
+insert into likesong values ('pelin', 130);
+insert into likesong values ('daniel_ek', 90);
+insert into likesong values ('daniel_ek', 110);
+insert into likesong values ('daniel_ek', 100);
+insert into likesong values ('daniel_ek', 130);
+insert into likealbum values ('selenparlar', 4);
+insert into likealbum values ('selenparlar', 1);
+insert into likealbum values ('selenparlar', 9);
+insert into likealbum values ('selenparlar', 13);
+insert into likealbum values ('selenparlar', 14);
+insert into likealbum values ('taflangundem', 9);
+insert into likealbum values ('taflangundem', 1);
+insert into likealbum values ('taflangundem', 13);
+insert into likealbum values ('can', 9);
+insert into likealbum values ('can', 13);
+insert into likealbum values ('can', 14);
+insert into likealbum values ('can', 15);
+insert into likealbum values ('pelin', 1);
+insert into likealbum values ('pelin', 7);
+insert into likealbum values ('pelin', 13);
+insert into likealbum values ('daniel_ek', 9);
+insert into likealbum values ('daniel_ek', 13);

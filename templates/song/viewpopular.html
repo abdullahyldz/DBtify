@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+    <meta charset="UTF-8">
+    <title>View Popular Songs</title>
+</head>
+<body>
+<h1>View Popular Songs of an Artist</h1>
+<form action = "{{ url_for('viewPopularSongs') }}" method="POST">
+        <div class="container">
+            <input type="text" placeholder="Artist" name="artist" required>
+            <button type="submit">View Popular Songs!</button>
+        </div>
+        <br>
+</form>
+
+
+
+</body>
+</html>

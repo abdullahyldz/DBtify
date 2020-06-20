@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+    <meta charset="UTF-8">
+    <title>View Popular Songs</title>
+</head>
+<body>
+<h1>View Popular Songs</h1>
+<table id="songs">
+    <thead>
+    <tr>
+        <th>Song ID</th>
+        <th>Song Name</th>
+        <th>Likes</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for song in data %}
+            <tr>
+                <td>{{song[0]}}</td>
+                <td>{{song[1]}}</td>
+                <td>{{song[2]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

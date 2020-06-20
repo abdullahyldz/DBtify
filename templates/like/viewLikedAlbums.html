@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Liked Albums</title>
+    <link rel="stylesheet" href='./../static/tables.css'/>
+</head>
+<body>
+
+<table id="songs">
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Liked Albums</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for album in data %}
+            <tr>
+                <td>{{album[0]}}</td>
+                <td>{{album[1]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
