@@ -10,5 +10,5 @@ Database connection is via  <strong>MySQL</strong>.
 
 
 
-Disclamation : 
-The app is designed for course Cmpe321, Introduction to Database Systems and inspired by [Spotify](https://www.spotify.com)
+Disclamation : <br>
+The app is designed for course Cmpe321, Introduction to Database Systems @ Bogazici University <br> and inspired by [Spotify](https://www.spotify.com)
