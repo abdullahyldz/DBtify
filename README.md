@@ -8,6 +8,7 @@ Frontend is developed with pure <strong>Html</strong> and <strong>CSS</strong>.<
 Database connection is via  <strong>MySQL</strong>.
 
 
+![](https://github.com/abdullahyldz/DBtify/blob/master/screenshots/welcome-page.PNG)
 
 
 Disclamation : <br>
