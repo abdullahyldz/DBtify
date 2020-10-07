@@ -322,10 +322,10 @@ def postworkTogetherArtists():
                            data=data)
 
 if __name__ == "__main__":
-    db.initializeDatabases()
-    trigger.deleteAlbumTrigger()
-    trigger.likeRemoverTrigger()
-    trigger.likeAlbumTrigger()
-    db.createInitialRecords()
-    db.createStoredProcedure()
-    app.run(debug=True)
+    # db.initializeDatabases()
+    # trigger.deleteAlbumTrigger()
+    # trigger.likeRemoverTrigger()
+    # trigger.likeAlbumTrigger()
+    # db.createInitialRecords()
+    # db.createStoredProcedure()
+    app.run(debug=True, use_reloader=False)

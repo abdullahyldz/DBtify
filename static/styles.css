@@ -1,21 +1,58 @@
-body{
-    background-color: lightblue;
+* {
+  padding: 0;
+  color: aliceblue;
+  background : url('images/music-player.jpg') no-repeat center center fixed;;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.welcome {
+    margin-top : 20%;
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    height : 25%;
 }
 
 a {
-  background-color: #1f11de;
-  box-shadow: 0 5px 0 darkred;
-  color: #cffffb;
   text-decoration: none;
-  text-transform: uppercase;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
 }
 
-a:hover {
-  background-color: #ce0606;
-  cursor: pointer;
+a:hover{
+  filter: brightness(0.6);
 }
-
-a:active {
-  box-shadow: none;
-  top: 5px;
+#container {
+  margin: auto;
+  height: 130px;
+}
+#first {
+  width: 50%;
+  float: left;
+  text-align:center;
+  align-items: center;
+  padding: 65px 0;
+}
+#second {
+  width: 50%;
+  float: left;
+  text-align:center;
+  align-items: center;
+  padding: 65px 0;
+}
+#clear {
+  clear: both;
 }
